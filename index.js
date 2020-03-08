@@ -30,6 +30,9 @@ const plugin = data =>
 
                 const template = Handlebars.compile(contents);
 
+                // This can be removed after the template is completely finished. Generally used for debugging.
+                data.stringified = JSON.stringify(data);
+
                 return resolve(template(data));
 
             }

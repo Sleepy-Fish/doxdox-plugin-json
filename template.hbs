@@ -8,6 +8,11 @@
     {{#if description}}
     <meta name="description" content="{{description}}">
     {{/if}}
+    <script>
+        window.data = function() {
+            console.log({{{stringified}}})
+        }
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     <style>
