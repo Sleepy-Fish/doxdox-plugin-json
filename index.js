@@ -3,8 +3,6 @@ const path = require('path');
 
 const Handlebars = require('handlebars');
 
-require('./helpers');
-
 /**
  * Boostrap template plugin for doxdox.
  *
@@ -22,7 +20,7 @@ const plugin = data =>
         if (err) return reject(err);
         const template = Handlebars.compile(contents);
         // This can be removed after the template is completely finished. Generally used for debugging.
-        data.stringified = JSON.stringify(data);
+        data.stringified = JSON.stringify(data, null, 4);
         return resolve(template(data));
       }
     );

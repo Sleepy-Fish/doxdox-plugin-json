@@ -9,9 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "doxdox": "^3.0.0",
-    "handlebars": "4.1.0",
-    "highlight.js": "9.15.6",
-    "markdown-it": "8.4.2"
+    "handlebars": "4.1.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -26,11 +24,7 @@
     "doxdox": "~2.0.3"
   },
   "scripts": {
-    "test": "npm run lint && doxdox index.js --layout index.js | diff test/fixtures/documentation.html -",
-    "test:docs": "doxdox index.js --layout markdown | diff DOCUMENTATION.md -",
-    "lint": "eslint .",
-    "fixtures": "doxdox index.js --layout index.js --output test/fixtures/documentation.html",
-    "docs": "doxdox index.js --layout markdown --output DOCUMENTATION.md"
+    "lint": "eslint ."
   },
   "keywords": [
     "doxdox",
