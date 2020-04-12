@@ -17,7 +17,7 @@ const myParser = 'sleepyfish'
 
 doxdox.parseFiles(classes, {
   parser: myParser,
-  loader: 'json'
+  layout: 'json'
 }).then(content => {
   // content is JSON of your docs
 });
